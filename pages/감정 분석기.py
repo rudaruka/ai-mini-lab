@@ -3,7 +3,8 @@ from transformers import pipeline
 
 @st.cache_resource
 def load_model():
-    return pipeline("sentiment-analysis")   # 가벼운 모델 자동 다운로드
+    # requirements.txt에 torch가 있다면 PyTorch 사용을 명시적으로 강제
+    return pipeline("sentiment-analysis", framework="pt")
 
 model = load_model()
 
