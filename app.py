@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="AI Mini Lab", page_icon="🤖")
 
-st.title("AI Mini Lab 🤖")
+st.title("AI bot")
 st.write("이 웹사이트는 중학생이 직접 만든 '기초 AI 체험 사이트'입니다!")
 
 st.markdown("""
